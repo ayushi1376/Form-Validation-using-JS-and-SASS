@@ -2,14 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SASS/SCSS</title>
+    <title>Form validation</title>
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">   
 </head>
-<body>
-    <header>
-        <h1>Welcome to SASS!</h1>
-        <h2>SASS is cool</h2>
-    </header>
+<body class="container">
+    <h1 class="h1">Please fill the form given below</h1>
+    <div class="formclass">
+         <form class="col s12" action="#" onsubmit="return validation()">
+            <div class="row">
+                <div class="input-field col s6">
+                <input id="first_name" type="text" class="form-control" autocomplete="off">
+                <label for="first_name">First Name</label>
+                <span id="fn"></span>
+                </div>
+                <div class="input-field col s6">
+                <input id="last_name" type="text" class="form-control">
+                <label for="last_name">Last Name</label>
+                <span id="ln"></span>
+                </div>
+                <div class="input-field col s12">
+                <input id="number" type="tel" class="form-control">
+                <label for="Mobile">Mobile</label>
+                <span id="num"></span>
+                </div>
+                <div class="input-field col s12">
+                <input id="email" type="email" class="form-control">
+                <label for="email">Email </label>
+                <span id="em"></span>
+                </div>
+                <div class="input-field col s12">
+                <input id="pass" type="text" class="form-control">
+                <label for="Password">Password</label>
+                <span id="pas"></span>
+                </div>
+                <div class="input-field col s12">
+                <input id="conpass" type="text" class="form-control">
+                <label for="Confirm-password">Comfirm password</label>
+                <span id="conpas"></span>
+                <input value="submit" type="submit" name="Submit" class="btn btn-success">
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
